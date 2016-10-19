@@ -87,12 +87,23 @@
    width:3em;
    float:none;
 }
-
 #deleteOption{
     float:right;
 }
-
 #bottomsPhoto{
-    height:15em;
+    height:20em;
 }
-
+#outfitThumbnail{
+    display:inline-block;
+    float:none;
+}
+#outfitCol{
+    text-align:center;
+    height:22em;
+}
+#outfitRow{
+}
+#outfitPhoto{
+    width:20em;
+    height:20em;
+}

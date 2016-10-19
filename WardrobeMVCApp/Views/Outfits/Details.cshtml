@@ -9,16 +9,38 @@
     <h3>@Html.ActionLink("Back to List", "Index")</h3>
 </div>
 
+<div class="row" id="outfitRow">
+    <div class="col-sm-12" id="outfitCol">
+        <div class="thumbnail" id="outfitThumbnail">
+            <img id="outfitPhoto" src="@Html.DisplayFor(model => model.Top.TopsPhoto)" alt="Top">
+        </div>
+    </div>
+    <div class="col-sm-12" id="outfitCol">
+        <div class="thumbnail" id="outfitThumbnail">
+            <img id="outfitPhoto" src="@Html.DisplayFor(model => model.Bottom.BottomsPhoto)" alt="Bottom">
+        </div>
+    </div>
+    <div class="col-sm-12" id="outfitCol">
+        <div class="thumbnail" id="outfitThumbnail">
+            <img id="outfitPhoto" src="@Html.DisplayFor(model => model.Sho.ShoesPhoto)" alt="Shoes">
+        </div>
+    </div>
+    <div class="col-sm-12" id="outfitCol">
+        <div class="thumbnail" id="outfitThumbnail">
+            <img id="outfitPhoto" src="@Html.DisplayFor(model => model.Accessory.AccessoriesPhoto)" alt="Accessories">
+        </div>
+    </div>
+</div>
 
-<div class="thumbnail" id="bottomThumbnail">
-    <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Top.TopsPhoto)" alt="Top">
-</div>
-<div class="thumbnail" id="bottomThumbnail">
-    <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Bottom.BottomsPhoto)" alt="Bottom">
-</div>
-<div class="thumbnail" id="bottomThumbnail">
-    <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Sho.ShoesPhoto)" alt="Shoes">
-</div>
-<div class="thumbnail" id="bottomThumbnail">
-    <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Accessory.AccessoriesPhoto)" alt="Accessories">
-</div>
+@*<div class="thumbnail" id="outfitThumbnail">
+        <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Top.TopsPhoto)" alt="Top">
+    </div>
+    <div class="thumbnail" id="outfitThumbnail">
+        <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Bottom.BottomsPhoto)" alt="Bottom">
+    </div>
+    <div class="thumbnail" id="outfitThumbnail">
+        <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Sho.ShoesPhoto)" alt="Shoes">
+    </div>
+    <div class="thumbnail" id="outfitThumbnail">
+        <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Accessory.AccessoriesPhoto)" alt="Accessories">
+    </div>*@

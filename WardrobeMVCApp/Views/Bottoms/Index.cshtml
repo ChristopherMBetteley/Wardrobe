@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WardrobeMVCApp.Models.Bottom>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="page-header">
+    <h1>Bottoms<small> Pants, Shorts, Swim Trunks, etc...</small></h1>
+    <h3>@Html.ActionLink("Create New", "Create")</h3>
+</div>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-3 col-md-3">
+            <div class="thumbnail" id="bottomThumbnail">
+                <img id="bottomsPhoto" src="@Html.DisplayFor(modelItem => item.BottomsPhoto)" alt="pants">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.BottomsName)</h3>
+                    <p>Color    : @Html.DisplayFor(modelItem => item.BottomsColor)</p>
+                    <p>Type     : @Html.DisplayFor(modelItem => item.BottomsType)
+                    <p>Season   : @Html.DisplayFor(modelItem => item.Season.SeasonName)</p>
+                    <p>Occassion: @Html.DisplayFor(modelItem => item.Occasssion.OccassionName)</p>
+                    <p><span id="editOption">@Html.ActionLink("Edit", "Edit", new { id = item.BottomsID })</span> <span id="deleteOption">@Html.ActionLink("Delete", "Delete", new { id = item.BottomsID })</span></p>
+                </div>
+                
+                
+               
+            </div>
+        </div>
+     
+    }
+</div>

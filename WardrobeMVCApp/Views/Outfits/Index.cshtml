@@ -1,0 +1,86 @@
+﻿@model IEnumerable<WardrobeMVCApp.Models.Outfit>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="page-header">
+    <h1>Outfits<small> Putting it all together to look your best.</small></h1>
+    <h3>@Html.ActionLink("Create New", "Create")</h3>
+</div>
+@foreach (var item in Model)
+{
+
+    <div class="col-sm-3 col-md-3">
+        <div class="thumbnail" id="bottomThumbnail">
+            <div class="caption">
+                <h3>@Html.DisplayFor(modelItem => item.OutfitName)</h3>
+               
+                <p><span>@Html.ActionLink("View", "Details", new { id = item.OutfitID })</span>  <span>@Html.ActionLink("Edit", "Edit", new { id = item.OutfitID })</span>  <span>@Html.ActionLink("Delete", "Delete", new { id = item.OutfitID })</span></p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    @*@Html.DisplayFor(modelItem => item.OutfitName)
+    <img id="bottomsPhoto" src="@Html.DisplayFor(modelItem => item.Top.TopsPhoto)" alt="Top">
+    <img id="bottomsPhoto" src="@Html.DisplayFor(modelItem => item.Bottom.BottomsPhoto)" alt="Bottom">
+    <img id="bottomsPhoto" src="@Html.DisplayFor(modelItem => item.Sho.ShoesPhoto)" alt="Shoes">
+    <img id="bottomsPhoto" src="@Html.DisplayFor(modelItem => item.Accessory.AccessoriesPhoto)" alt="Accessories">*@
+
+}
+
+@*<h2>Outfits</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OutfitName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Accessory.AccessoriesName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bottom.BottomsName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sho.ShoesName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Top.TopsName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OutfitName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Accessory.AccessoriesName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bottom.BottomsName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sho.ShoesName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Top.TopsName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OutfitID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OutfitID })
+        </td>
+    </tr>
+}
+
+</table>*@

@@ -1,0 +1,96 @@
+﻿@model IEnumerable<WardrobeMVCApp.Models.Sho>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="page-header">
+    <h1>Shoes<small> Dress, Sneakers, Athletic, etc...</small></h1>
+    <h3>@Html.ActionLink("Create New", "Create")</h3>
+</div>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail" id="bottomThumbnail">
+                <img id="bottomsPhoto" src="@Html.DisplayFor(modelItem => item.ShoesPhoto)" alt="Shoes">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.ShoesName)</h3>
+                    <p>Color    : @Html.DisplayFor(modelItem => item.ShoesColor)</p>
+                    <p>Type     : @Html.DisplayFor(modelItem => item.ShoesType)
+                    <p>Season   : @Html.DisplayFor(modelItem => item.Season.SeasonName)</p>
+                    <p>Occassion: @Html.DisplayFor(modelItem => item.Occasssion.OccassionName)</p>
+                    <p><span id="editOption">@Html.ActionLink("Edit", "Edit", new { id = item.ShoesID })</span> <span id="deleteOption">@Html.ActionLink("Delete", "Delete", new { id = item.ShoesID })</span></p>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+
+
+
+
+
+
+
+
+@*<h2>Shoes</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoesName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoesPhoto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoesColor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShoesType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Occasssion.OccassionName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Season.SeasonName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShoesName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShoesPhoto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShoesColor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ShoesType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Occasssion.OccassionName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Season.SeasonName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ShoesID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ShoesID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ShoesID })
+        </td>
+    </tr>
+}
+
+</table>*@

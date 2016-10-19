@@ -1,0 +1,98 @@
+﻿body {
+
+}
+.divider{
+    border-color:black;
+}
+.navbar-brand{
+    color:#E0E3E7;
+}
+.navbar-brand:hover{
+    color:#E0E3E7;
+}
+#navbutton{
+    
+    border:solid;
+    border-color:#E0E3E7;
+    border-width:medium;
+    border-radius:10px;
+}
+.navbar{
+    background-color:#28292A;
+}
+#navbartext a {
+    color:#E0E3E7;
+}
+#navbartext a:hover{
+    color:black;
+}
+#mainJumbo {
+    height:25em;
+    background-image: url('Jumbo3.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    text-align:center;
+    margin-top:2em;
+}
+#outfitText{
+    background-color:rgba(40,40,40,.75);
+    color:#E0E3E7;
+    margin-top:10em;
+    margin-left:10em;
+    margin-right:10em;
+    border-radius:20px;
+
+}
+#homeThumbnails{
+    height:25em;
+    text-align:center;
+      
+
+
+}
+#homeThumbnails img{
+    height:15em;
+        
+
+
+}
+#homeThumbnails caption{
+    position:absolute;
+    bottom:2em;
+    display:inline;
+    text-align: center;
+}
+.btn{
+    background-color:grey;
+    color:#E0E3E7;
+    border:none;
+}
+#homeNavBar{
+    text-align:center;
+    color:#E0E3E7;
+}
+#btn{
+   background-color:#28292A;
+   border:solid;
+   border-color:#E0E3E7;
+   border-radius:10px;
+   width:5em;
+   text-align:center;
+}
+#bar{
+   border:solid;
+   border-width:3px;
+   border-color:#E0E3E7;
+   border-radius:20px;
+   width:3em;
+   float:none;
+}
+
+#deleteOption{
+    float:right;
+}
+
+#bottomsPhoto{
+    height:15em;
+}
+

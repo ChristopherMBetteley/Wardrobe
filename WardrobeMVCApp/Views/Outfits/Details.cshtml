@@ -1,0 +1,24 @@
+﻿@model WardrobeMVCApp.Models.Outfit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="page-header">
+    <h1>Outfit<small>   @Html.DisplayFor(model => model.OutfitName) </small></h1>
+    <h3>@Html.ActionLink("Back to List", "Index")</h3>
+</div>
+
+
+<div class="thumbnail" id="bottomThumbnail">
+    <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Top.TopsPhoto)" alt="Top">
+</div>
+<div class="thumbnail" id="bottomThumbnail">
+    <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Bottom.BottomsPhoto)" alt="Bottom">
+</div>
+<div class="thumbnail" id="bottomThumbnail">
+    <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Sho.ShoesPhoto)" alt="Shoes">
+</div>
+<div class="thumbnail" id="bottomThumbnail">
+    <img id="bottomsPhoto" src="@Html.DisplayFor(model => model.Accessory.AccessoriesPhoto)" alt="Accessories">
+</div>
